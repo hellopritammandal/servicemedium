@@ -1,0 +1,151 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Service Medium</title>
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/line-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/job-3.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/kyc-1.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'assets/images/favicon.png' %}">
+    <link rel="apple-touch-icon" href="{% static 'assets/images/apple-touch-icon.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'assets/images/icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'assets/images/icon-114x114.png' %}">
+</head>
+
+<body>
+    <div class="ugf-wraper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 offset-lg-6 p-sm-0">
+                    <div class="ufg-job-application-wrapper">
+                        <div class="logo">
+                            <a href="/"><img src="{% static 'assets/images/logo-8.png' %}" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <h1>Get Any Service You Need with Service Medium - Safe, Secure, Reliable!</h1>
+                        <form action="{% url 'contact' %}" class="job-application-form" id="commentForm" method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            
+                            <div class="input-type-block">
+                              <h4>Fill Out the Form & Get the Services You Need Today!</h4>
+                              <ul class="tick-list">
+                                <li>Simply provide your details and the service you need in our secure form.</li>
+                                <li>Our team will review your request and contact you promptly to discuss your needs.</li>
+                                <li>Sit back and relax while we take care of everything. Your privacy is our priority.</li>
+                              </ul>
+                              <br>
+                              <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Full name" required>
+                              </div>
+                              <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Email address" required>
+                              </div>
+                              <div class="form-group">
+                                <input type="text" name="phone_number" class="form-control" placeholder="Phone number" required>
+                              </div>
+                            </div>
+                            <div class="input-type-block">
+                              <h4>What You Need ?</h4>
+                              <div class="form-group">
+                                <textarea name="description" class="form-control" placeholder="Describe in short " required></textarea>
+                              </div>
+                              <div class="form-group">
+                                <div class="custom-file">
+                                  <input type="file" name="attachment" class="custom-file-input form-control" id="validatedCustomFile" required>
+                                  <label class="custom-file-label" for="validatedCustomFile"><span class="file-return">No file choosen</span></label>
+                                </div>
+                              </div>
+                              <h4>Rest assured, your information is 100% secure with us. We guarantee complete privacy and identity protection.</h4>
+                              <div class="form-group">
+                                <div class="custom-checkbox">
+                                  <input type="checkbox" name="terms_accepted" class="custom-control-input" id="terms" required>
+                                  <label class="custom-control-label" for="terms">I accept the <a href="#">Term of Conditions</a> and <a href="#">Privacy Policy</a></label>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="btn" type="submit">Submit Application</button>
+                          </form>
+                           
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ugf-wraper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 offset-lg-6 p-sm-0">
+                    <div class="ufg-job-application-wrapper">
+                        <h2>Why Choose Service Medium?</h2>
+                        <br>
+                        <p>At Service Medium, we prioritize your satisfaction and security above all else. Here are a few reasons
+                            why you should choose us for all your service needs:</p>
+                            <br>
+                        <h4>Comprehensive Range of Services</h4>
+                        <p>No matter what you need, we've got you covered. From home repairs to professional consultations, our
+                            extensive network of experts ensures that you get the best service every time.</p>
+                        <h4>Easy and Convenient Process</h4>
+                        <p>Our user-friendly platform makes it easy to request any service. Just fill out a simple form, and we’ll
+                            handle the rest. No more hassle of searching and vetting service providers yourself.</p>
+                        <h4>100% Privacy and Security</h4>
+                        <p>Your trust is important to us. We use advanced security measures to protect your personal information.
+                            With Service Medium, you can be confident that your identity and data are completely secure.</p>
+                            <h4>Prompt and Reliable Communication</h4>
+                            <p>We value your time. Our team is committed to responding quickly to your requests and providing timely
+                                updates. You can count on us for efficient and reliable service.</p>
+                            <h4>Expert Professionals</h4>
+                            <p>Our service providers are thoroughly vetted and highly skilled. We ensure that you receive top-quality
+                                assistance from experts who are dedicated to meeting your needs.</p>
+                            <p>Choose Service Medium today and experience a seamless, secure, and satisfying service journey!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <footer class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col relative">
+                        <div class="footer-wrap">
+                            <ul class="footer-nav">
+                                <li><a href="https://about.servicemedium.com" target="_blank">Know More</a></li>
+                                <li><a href="https://blogs.servicemedium.com" target="_blank">Blogs</a></li>
+                                <li><a href="https://privacy_policy.servicemedium.com" target="_blank">Privacy Policy</a></li>
+                                <li><a href="https://terms.servicemedium.com" target="_blank">Terms &amp; Conditions</a></li>
+                            </ul>
+                            
+                            <div class="copyright">
+                                <p>Copyright © 2024 <a href="/">Service Medium</a>, All rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+        <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+        <script src="{% static 'assets/js/popper.min.js' %}"></script>
+        <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'assets/js/countrySelect.min.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.validate.min.js' %}"></script>
+        <script src="{% static 'assets/js/custom.js' %}"></script>
+    
+        <style>
+            footer {
+                margin-top: 100px;
+            }
+        </style>
+    </body>
+    
+    </html>
+    
